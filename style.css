@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.container img{
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+.container h1{
+    position: absolute;
+    top: 5vh;
+    color: #fff;
+    font-size: 14vw;
+    font-weight: 900;
+    text-shadow: 0 0 10px black;
+    letter-spacing: 4px;
+}
+section{
+    background-color: rgb(48, 47, 47);
+    color: #fff;
+    padding: 4rem 0;
+    
+}
+
+.secHeading{
+    font-size: 8vw;
+    padding: 0rem 10rem;
+}
+
+.text{
+    font-size: 1.5rem;
+    padding: 0rem 10rem;
+    margin: 5rem 0rem;
+}
+.bg{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-attachment: fixed;
+    object-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    
+}
+.bg1{
+    
+    background-image: url(cycling.jpg);
+}
+.bg2{
+    background-image: url(paraGliding.jpg);
+}
+.bg3{
+    background-image: url(surfing.jpg);
+}
+.desc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    color: black;
+    padding: 0px  10px;
+    font-size: 4vw;
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    align-items: center;
+}
